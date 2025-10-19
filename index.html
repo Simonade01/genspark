@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm Simon 👋</h1>
+    <p>A student passionate about engineering, innovation, and creative problem-solving.</p>
+  </header>
+
+  <section id="projects">
+    <section id="projects">
+  <h2>My Projects</h2>
+
+  <div class="project">
+    <img src="https://picsum.photos/seed/gen/400/250" alt="GenSpark screenshot" class="project-image">
+    <div class="project-info">
+      <h3>GenSpark — AI Idea Generator</h3>
+      <p>A small web app that generates creative prompts by category. Built with HTML, CSS, and JavaScript.</p>
+      <div class="project-actions">
+        <button class="viewBtn" data-project="genspark">View Demo</button>
+        <a href="#" class="codeLink" target="_blank">Code</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Modal -->
+<div id="modal" class="modal-hidden">
+  <div class="modal-content">
+    <span id="modalClose" class="modal-close">×</span>
+    <img id="modalImage" src="" alt="Project large" />
+    <h3 id="modalTitle"></h3>
+    <p id="modalText"></p>
+    <a id="modalCode" href="#" target="_blank">View code on GitHub</a>
+  </div>
+</div>
+
+  </section>
+
+  <button id="themeBtn">Change Theme</button>
+
+  <footer>
+    <p>Made with ❤️ by Simon</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
