@@ -1,45 +1,41 @@
+# 🌐 Simon Adedokun — Web Projects Portfolio
 
-# 🌟 Genspark
+Welcome to my portfolio of beginner web projects built while learning HTML, CSS, and JavaScript.
 
-My first web project — part of my growing portfolio in web development.
+## 🚀 Projects
 
-## 👋 About
+### 1. Genspark 🌟
+My first web experiment where I learned how to structure web pages and style with CSS.
+- 🔗 [Live Demo](https://simonade01.github.io/genspark/)
+- 💻 [Source Code](https://github.com/Simonade01/genspark)
+- 🖼️ Preview:  
+  ![Screenshot](genspark-screenshot.png)
 
-**Genspark** is my first hands-on experiment using **HTML**, **CSS**, and **JavaScript** to create an interactive personal webpage.  
-This project helped me understand the structure of web pages, how styling works, and how to make them come alive with simple interactivity.
+---
 
-## 🚀 Features
+### 2. Color Changer 🎨
+A simple background color generator built with JavaScript.
+- 🔗 [Live Demo](https://simonade01.github.io/color-changer/)
+- 💻 [Source Code](https://github.com/Simonade01/color-changer)
+- 🖼️ Preview:  
+  ![Screenshot](color-changer-screenshot.png)
 
-- Responsive layout that adjusts to different screen sizes  
-- Simple hover and click animations  
-- A personal greeting button that interacts with users  
-- Custom colors and fonts styled through CSS  
+---
 
-## 💻 Built With
+## 💡 About Me
+I’m Simon — an aspiring mechanical engineer learning to combine design, logic, and creativity through code.  
+Currently exploring how technology can be used to create practical solutions that make life simpler and smarter.
 
-- **HTML5** — for structure  
-- **CSS3** — for design and layout  
-- **JavaScript (Vanilla)** — for interactivity  
-- **Visual Studio Code** — for development  
+---
 
-## 📸 Preview
+## 🧰 Built With
+- HTML
+- CSS
+- JavaScript
+- Visual Studio Code
 
-![Website Screenshot](https://picsum.photos/400)  
-*(Replace this image with your actual screenshot from VS Code Live Server or GitHub Pages)*
+---
 
-## 🧠 What I Learned
-
-- Building and linking web files correctly (`index.html`, `style.css`, `script.js`)  
-- How to use **GitHub Pages** for free website hosting  
-- Writing readable and organized code  
-- The importance of testing and debugging  
-
-## 🌐 Live Demo
-
-👉 [View my project here!](https://simonade01.github.io/genspark)
-
-## 🙌 Author
-
-**Simon Adedokun**  
-Aspiring Mechanical Engineer & Web Developer  
-[LinkedIn](#) | [Codecademy Certificates](#)
+## ✨ Connect
+- [LinkedIn](#)
+- [Codecademy Certificates](#)
