@@ -16,6 +16,12 @@ const projects = {
     code: "#" // replace with your GitHub URL later
   }
 };
+projects.colorChanger = {
+  title: "Color Changer — Random Background App",
+  image: "https://picsum.photos/seed/color/1200/700",
+  text: "A web app that randomly changes the background color when you click the button. Built to deepen my JavaScript and DOM skills.",
+  code: "https://github.com/Simonade01/color-changer"
+};
 
 const modal = document.getElementById("modal");
 const modalImage = document.getElementById("modalImage");
@@ -44,3 +50,4 @@ modalClose.addEventListener("click", () => modal.className = "modal-hidden");
 modal.addEventListener("click", (e) => {
   if (e.target === modal) modal.className = "modal-hidden";
 });
+
