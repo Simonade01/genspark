@@ -99,3 +99,24 @@ button:hover {
   font-size: 28px;
   cursor: pointer;
 }
+/* Dark Theme Styling */
+body.dark-theme {
+  background-color: #1e1e1e;
+  color: #f4f4f4;
+  transition: all 0.4s ease;
+}
+
+body.dark-theme a {
+  color: #80dfff;
+}
+
+body.dark-theme .project-card {
+  background-color: #222;
+  border: 1px solid #333;
+}
+
+/* Smooth fade for mode changes */
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
