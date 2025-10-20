@@ -120,3 +120,52 @@ body {
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 
+/* ====== GLOWING THEME BUTTON ====== */
+.glow-btn {
+  background-color: #4b6cb7;
+  background-image: linear-gradient(315deg, #4b6cb7 0%, #182848 74%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(75, 108, 183, 0.5);
+}
+
+.glow-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(75, 108, 183, 0.8);
+}
+
+/* Ripple Effect */
+.glow-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.6);
+  opacity: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: none;
+  transition: transform 0.5s ease, opacity 0.8s ease;
+}
+
+.glow-btn:active::after {
+  transform: translate(-50%, -50%) scale(25);
+  opacity: 0;
+}
+
+/* Dark mode variation */
+body.dark-theme .glow-btn {
+  background-color: #222;
+  background-image: linear-gradient(315deg, #000 0%, #333 74%);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
