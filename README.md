@@ -1,26 +1,45 @@
 
-# Genspark 🌟
-My first web project — built as part of my portfolio journey.
+# 🌟 Genspark
+
+My first web project — part of my growing portfolio in web development.
 
 ## 👋 About
-This website was my first experiment with HTML, CSS, and JavaScript.  
-I used it to learn how web pages work and how to make them interactive.
+
+**Genspark** is my first hands-on experiment using **HTML**, **CSS**, and **JavaScript** to create an interactive personal webpage.  
+This project helped me understand the structure of web pages, how styling works, and how to make them come alive with simple interactivity.
 
 ## 🚀 Features
-- Responsive layout  
-- Simple animations  
-- A personal greeting button  
+
+- Responsive layout that adjusts to different screen sizes  
+- Simple hover and click animations  
+- A personal greeting button that interacts with users  
+- Custom colors and fonts styled through CSS  
 
 ## 💻 Built With
-- HTML  
-- CSS  
-- JavaScript  
-- Visual Studio Code  
+
+- **HTML5** — for structure  
+- **CSS3** — for design and layout  
+- **JavaScript (Vanilla)** — for interactivity  
+- **Visual Studio Code** — for development  
 
 ## 📸 Preview
-![Screenshot](https://picsum.photos/400)  
-(Replace this image later with your actual screenshot)
+
+![Website Screenshot](https://picsum.photos/400)  
+*(Replace this image with your actual screenshot from VS Code Live Server or GitHub Pages)*
+
+## 🧠 What I Learned
+
+- Building and linking web files correctly (`index.html`, `style.css`, `script.js`)  
+- How to use **GitHub Pages** for free website hosting  
+- Writing readable and organized code  
+- The importance of testing and debugging  
+
+## 🌐 Live Demo
+
+👉 [View my project here!](https://simonade01.github.io/genspark)
 
 ## 🙌 Author
-**Simon Ade** — aspiring engineer and web developer.  
-[LinkedIn](#) | [Codecademy Projects](#)
+
+**Simon Adedokun**  
+Aspiring Mechanical Engineer & Web Developer  
+[LinkedIn](#) | [Codecademy Certificates](#)
