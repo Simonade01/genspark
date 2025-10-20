@@ -1,28 +1,30 @@
+// ====== THEME TOGGLE ======
 const btn = document.getElementById("themeBtn");
 let darkMode = false;
 
 btn.addEventListener("click", () => {
   darkMode = !darkMode;
-  document.body.style.backgroundColor = darkMode ? "#1e1e1e" : "#f4f4f9";
-  document.body.style.color = darkMode ? "#fff" : "#333";
-  btn.textContent = darkMode ? "Light Mode" : "Dark Mode";
+  document.body.classList.toggle("dark-theme", darkMode);
+  btn.textContent = darkMode ? "Light Mode 🌞" : "Dark Mode 🌙";
 });
-// Simple modal data for projects
+
+// ====== PROJECT MODAL DATA ======
 const projects = {
   genspark: {
     title: "GenSpark — AI Idea Generator",
     image: "https://picsum.photos/seed/gen/1200/700",
     text: "GenSpark generates creative prompts by category. Built with vanilla JS and lightweight UI. Demo simulates generative behavior using arrays and filtering logic.",
-    code: "#" // replace with your GitHub URL later
+    code: "#" // Replace with your GitHub URL later
+  },
+  colorChanger: {
+    title: "Color Changer — Random Background App",
+    image: "https://picsum.photos/seed/color/1200/700",
+    text: "A web app that randomly changes the background color when you click the button. Built to deepen my JavaScript and DOM skills.",
+    code: "https://github.com/Simonade01/color-changer"
   }
 };
-projects.colorChanger = {
-  title: "Color Changer — Random Background App",
-  image: "https://picsum.photos/seed/color/1200/700",
-  text: "A web app that randomly changes the background color when you click the button. Built to deepen my JavaScript and DOM skills.",
-  code: "https://github.com/Simonade01/color-changer"
-};
 
+// ====== MODAL ELEMENTS ======
 const modal = document.getElementById("modal");
 const modalImage = document.getElementById("modalImage");
 const modalTitle = document.getElementById("modalTitle");
@@ -30,7 +32,7 @@ const modalText = document.getElementById("modalText");
 const modalCode = document.getElementById("modalCode");
 const modalClose = document.getElementById("modalClose");
 
-// open modal when clicking view buttons
+// ====== OPEN MODAL ======
 document.querySelectorAll(".viewBtn").forEach(btn => {
   btn.addEventListener("click", () => {
     const key = btn.getAttribute("data-project");
@@ -44,10 +46,11 @@ document.querySelectorAll(".viewBtn").forEach(btn => {
   });
 });
 
-// close modal
-modalClose.addEventListener("click", () => modal.className = "modal-hidden");
-// click outside modal to close
+// ====== CLOSE MODAL ======
+modalClose.addEventListener("click", () => {
+  modal.className = "modal-hidden";
+});
+
 modal.addEventListener("click", (e) => {
   if (e.target === modal) modal.className = "modal-hidden";
 });
-
