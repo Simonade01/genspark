@@ -67,3 +67,18 @@ function typeEffect() {
 
 window.addEventListener("load", typeEffect);
 
+
+// Typing effect for About Me
+const typingText = document.getElementById("typingText");
+const text = "About Me 👨‍💻";
+let i = 0;
+
+function typeWriter() {
+  if (i < text.length) {
+    typingText.textContent += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 100);
+  }
+}
+
+window.addEventListener("load", typeWriter);
