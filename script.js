@@ -56,12 +56,14 @@ if (modalClose) {
     if (e.target === modal) modal.className = "modal-hidden";
   });
 }
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
   const header = document.getElementById("typingText");
   const body = document.getElementById("typingBody");
 
+  if (!header || !body) return;
+
   const headerText = "About Me 👨‍💻";
-  const bodyText = "I'm an aspiring engineer passionate about renewable energy, design, and innovation.";
+  const bodyText = "I'm Simon Adedokun, an aspiring engineer and web developer passionate about building solutions that combine creativity, technology, and impact.";
 
   let i = 0;
   let j = 0;
@@ -72,7 +74,8 @@ window.addEventListener("DOMContentLoaded", () => {
       i++;
       setTimeout(typeHeader, 100);
     } else {
-      setTimeout(typeBody, 500); // small pause before typing body
+      // Start typing the body after header finishes
+      setTimeout(typeBody, 400);
     }
   }
 
@@ -80,10 +83,9 @@ window.addEventListener("DOMContentLoaded", () => {
     if (j < bodyText.length) {
       body.textContent += bodyText.charAt(j);
       j++;
-      setTimeout(typeBody, 50);
+      setTimeout(typeBody, 40);
     }
   }
 
   typeHeader();
 });
-
