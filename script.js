@@ -54,3 +54,16 @@ modalClose.addEventListener("click", () => {
 modal.addEventListener("click", (e) => {
   if (e.target === modal) modal.className = "modal-hidden";
 });
+const text = "About Me 👨‍💻";
+let i = 0;
+
+function typeEffect() {
+  if (i < text.length) {
+    document.getElementById("typingText").textContent += text.charAt(i);
+    i++;
+    setTimeout(typeEffect, 100);
+  }
+}
+
+window.addEventListener("load", typeEffect);
+
