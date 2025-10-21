@@ -47,46 +47,20 @@ document.querySelectorAll(".viewBtn").forEach(btn => {
 });
 
 // ====== CLOSE MODAL ======
-modalClose.addEventListener("click", () => {
-  modal.className = "modal-hidden";
-});
+if (modalClose) {
+  modalClose.addEventListener("click", () => {
+    modal.className = "modal-hidden";
+  });
 
-modal.addEventListener("click", (e) => {
-  if (e.target === modal) modal.className = "modal-hidden";
-});
-const text = "About Me 👨‍💻";
-let i = 0;
-
-function typeEffect() {
-  if (i < text.length) {
-    document.getElementById("typingText").textContent += text.charAt(i);
-    i++;
-    setTimeout(typeEffect, 100);
-  }
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) modal.className = "modal-hidden";
+  });
 }
 
-window.addEventListener("load", typeEffect);
-
-
-// Typing effect for About Me
-const typingText = document.getElementById("typingText");
-const text = "About Me 👨‍💻";
-let i = 0;
-
-function typeWriter() {
-  if (i < text.length) {
-    typingText.textContent += text.charAt(i);
-    i++;
-    setTimeout(typeWriter, 100);
-  }
-}
-
-window.addEventListener("load", typeWriter);
-
-// Typing effect for About Me
+// ====== TYPING EFFECT ======
 window.addEventListener("DOMContentLoaded", () => {
   const typingText = document.getElementById("typingText");
-  if (!typingText) return; // if element not found, stop
+  if (!typingText) return;
 
   const text = "About Me 👨‍💻";
   let i = 0;
@@ -95,7 +69,7 @@ window.addEventListener("DOMContentLoaded", () => {
     if (i < text.length) {
       typingText.textContent += text.charAt(i);
       i++;
-      setTimeout(typeWriter, 100);
+      setTimeout(typeWriter, 120);
     }
   }
 
