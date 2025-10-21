@@ -56,22 +56,34 @@ if (modalClose) {
     if (e.target === modal) modal.className = "modal-hidden";
   });
 }
-
-// ====== TYPING EFFECT ======
 window.addEventListener("DOMContentLoaded", () => {
-  const typingText = document.getElementById("typingText");
-  if (!typingText) return;
+  const header = document.getElementById("typingText");
+  const body = document.getElementById("typingBody");
 
-  const text = "About Me 👨‍💻";
+  const headerText = "About Me 👨‍💻";
+  const bodyText = "I'm an aspiring engineer passionate about renewable energy, design, and innovation.";
+
   let i = 0;
+  let j = 0;
 
-  function typeWriter() {
-    if (i < text.length) {
-      typingText.textContent += text.charAt(i);
+  function typeHeader() {
+    if (i < headerText.length) {
+      header.textContent += headerText.charAt(i);
       i++;
-      setTimeout(typeWriter, 120);
+      setTimeout(typeHeader, 100);
+    } else {
+      setTimeout(typeBody, 500); // small pause before typing body
     }
   }
 
-  typeWriter();
+  function typeBody() {
+    if (j < bodyText.length) {
+      body.textContent += bodyText.charAt(j);
+      j++;
+      setTimeout(typeBody, 50);
+    }
+  }
+
+  typeHeader();
 });
+
