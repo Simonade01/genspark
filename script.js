@@ -82,3 +82,22 @@ function typeWriter() {
 }
 
 window.addEventListener("load", typeWriter);
+
+// Typing effect for About Me
+window.addEventListener("DOMContentLoaded", () => {
+  const typingText = document.getElementById("typingText");
+  if (!typingText) return; // if element not found, stop
+
+  const text = "About Me 👨‍💻";
+  let i = 0;
+
+  function typeWriter() {
+    if (i < text.length) {
+      typingText.textContent += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, 100);
+    }
+  }
+
+  typeWriter();
+});
