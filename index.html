@@ -1,50 +1,141 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simon's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simon — AI for Road Safety</title>
+  <meta name="description" content="AI research project exploring how intelligent systems can reduce road traffic accidents. Mentored by a PhD researcher." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Hi, I'm Simon 👋</h1>
-    <p>A student passionate about engineering, innovation, and creative problem-solving.</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Simon</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#project">Project</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        <a class="btn-ghost" id="download-btn" href="#" download>Download CV</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="toggle menu">☰</button>
+    </div>
   </header>
 
-  <section id="about" class="reveal">
-    <h2 id="typingText"></h2>
-    <p id="aboutText">
-      I'm Simon Adedokun, an aspiring engineer and web developer passionate about 
-      building solutions that combine creativity, technology, and impact.
-    </p>
-  </section>
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>AI for Safer Roads</h1>
+          <p class="lead">Researching practical AI approaches to reduce traffic accidents — mentored by a PhD researcher. Built prototypes and experiments on GitHub.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#project">See project</a>
+            <a class="btn-outline" href="https://github.com/your-username/your-repo" target="_blank" rel="noopener">View repo</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="meta">
+            <strong>Role</strong>
+            <span>Researcher & Developer</span>
+          </div>
+          <div class="meta">
+            <strong>Mentor</strong>
+            <span>PhD Researcher</span>
+          </div>
+          <div class="meta">
+            <strong>Org</strong>
+            <span>Independent / GitHub</span>
+          </div>
+          <img src="https://placehold.co/420x260?text=Project+Preview" alt="Project preview" id="previewImg" />
+        </div>
+      </div>
+    </section>
 
-  <section id="projects">
-    <h2>My Projects 💡</h2>
+    <section id="about" class="container section">
+      <h2>About the research</h2>
+      <p>
+        This project explores how AI systems can help prevent road traffic accidents. Work ranges from data-driven risk prediction and real-time alerts to prototype sensor fusion demos and policy recommendations. The goal is to build practical, scalable tools that improve safety for drivers, pedestrians, and commuters.
+      </p>
+      <ul class="pill-list">
+        <li>Data preprocessing & feature design</li>
+        <li>Real-time risk scoring</li>
+        <li>Sensor fusion & edge deployment</li>
+        <li>Policy and human factors</li>
+      </ul>
+    </section>
 
-    <div class="project-card reveal">
-      <h3>Genspark 🌟</h3>
-      <img src="genspark-screenshot.png" alt="Screenshot of Genspark project" width="300">
-      <p>My first web project — where I learned HTML, CSS, and JavaScript while building my own webpage.</p>
-      <a href="https://simonade01.github.io/genspark/" target="_blank">View Demo</a> |
-      <a href="https://github.com/Simonade01/genspark" target="_blank">Code</a>
+    <section id="project" class="container section project-grid">
+      <h2>Project highlights</h2>
+
+      <div class="cards" id="projectCards">
+        <!-- JS will populate cards dynamically -->
+      </div>
+
+      <div class="project-actions">
+        <button id="openDemo" class="btn">Open Demo</button>
+        <a class="btn-outline" href="https://github.com/your-username/your-repo" target="_blank" rel="noopener">Open on GitHub</a>
+      </div>
+    </section>
+
+    <section id="work" class="container section">
+      <h2>Other work</h2>
+      <p>Internships, coursework, and quick prototypes related to systems, controls, and ML.</p>
+
+      <div class="work-list">
+        <article class="work-card">
+          <h3>Traffic Risk Classifier</h3>
+          <p>Lightweight model to estimate collision risk using telemetry and weather data.</p>
+        </article>
+        <article class="work-card">
+          <h3>Edge Alert Demo</h3>
+          <p>Prototype that simulates vehicle-to-infrastructure alerts on low-power hardware.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container section contact-section">
+      <h2>Contact</h2>
+      <p>Want collab, mentorship inquiries, or feedback? Hit me up.</p>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <label>
+          Name
+          <input name="name" id="name" required placeholder="Your name" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" id="email" required placeholder="you@example.com" />
+        </label>
+        <label>
+          Message
+          <textarea name="message" id="message" rows="4" placeholder="Tell me about your idea" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send</button>
+          <button type="button" id="resetBtn" class="btn-ghost">Reset</button>
+        </div>
+        <p class="form-note" id="formNote" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="footerYear"></span> Simon — AI for Road Safety</div>
+      <div class="socials">
+        <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </div>
-
-    <div class="project-card reveal">
-      <h3>Color Changer 🎨</h3>
-      <img src="color-changer-screenshot.png" alt="Screenshot of Color Changer app" width="300">
-      <p>A simple web app that changes background colors randomly with a click. My first JavaScript experiment!</p>
-      <a href="https://simonade01.github.io/color-changer/" target="_blank">View Demo</a> |
-      <a href="https://github.com/Simonade01/color-changer" target="_blank">Code</a>
-    </div>
-  </section>
-
-  <button id="themeBtn" class="glow-btn">Dark Mode 🌙</button>
-
-  <footer>
-    <p>Made with ❤️ by Simon</p>
   </footer>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button id="modalClose" class="modal-close" aria-label="Close">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
