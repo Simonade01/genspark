@@ -1,140 +1,21 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Simon — AI for Road Safety</title>
-  <meta name="description" content="AI research project exploring how intelligent systems can reduce road traffic accidents. Mentored by a PhD researcher." />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genspark Color Changer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="#">Simon</a>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#project">Project</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
-        <a class="btn-ghost" id="download-btn" href="#" download>Download CV</a>
-      </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="toggle menu">☰</button>
-    </div>
-  </header>
+  <div class="container">
+    <h1>🎨 Genspark Color Changer</h1>
+    <p class="subtitle">Click the button and watch the vibes change!</p>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1>AI for Safer Roads</h1>
-          <p class="lead">Researching practical AI approaches to reduce traffic accidents — mentored by a PhD researcher. Built prototypes and experiments on GitHub.</p>
-          <div class="hero-cta">
-            <a class="btn" href="#project">See project</a>
-            <a class="btn-outline" href="https://github.com/your-username/your-repo" target="_blank" rel="noopener">View repo</a>
-          </div>
-        </div>
-        <div class="hero-card">
-          <div class="meta">
-            <strong>Role</strong>
-            <span>Researcher & Developer</span>
-          </div>
-          <div class="meta">
-            <strong>Mentor</strong>
-            <span>PhD Researcher</span>
-          </div>
-          <div class="meta">
-            <strong>Org</strong>
-            <span>Independent / GitHub</span>
-          </div>
-          <img src="https://placehold.co/420x260?text=Project+Preview" alt="Project preview" id="previewImg" />
-        </div>
-      </div>
-    </section>
+    <div class="color-display" id="colorBox">#ffffff</div>
 
-    <section id="about" class="container section">
-      <h2>About the research</h2>
-      <p>
-        This project explores how AI systems can help prevent road traffic accidents. Work ranges from data-driven risk prediction and real-time alerts to prototype sensor fusion demos and policy recommendations. The goal is to build practical, scalable tools that improve safety for drivers, pedestrians, and commuters.
-      </p>
-      <ul class="pill-list">
-        <li>Data preprocessing & feature design</li>
-        <li>Real-time risk scoring</li>
-        <li>Sensor fusion & edge deployment</li>
-        <li>Policy and human factors</li>
-      </ul>
-    </section>
+    <button id="changeColorBtn">Change Color</button>
 
-    <section id="project" class="container section project-grid">
-      <h2>Project highlights</h2>
-
-      <div class="cards" id="projectCards">
-        <!-- JS will populate cards dynamically -->
-      </div>
-
-      <div class="project-actions">
-        <button id="openDemo" class="btn">Open Demo</button>
-        <a class="btn-outline" href="https://github.com/your-username/your-repo" target="_blank" rel="noopener">Open on GitHub</a>
-      </div>
-    </section>
-
-    <section id="work" class="container section">
-      <h2>Other work</h2>
-      <p>Internships, coursework, and quick prototypes related to systems, controls, and ML.</p>
-
-      <div class="work-list">
-        <article class="work-card">
-          <h3>Traffic Risk Classifier</h3>
-          <p>Lightweight model to estimate collision risk using telemetry and weather data.</p>
-        </article>
-        <article class="work-card">
-          <h3>Edge Alert Demo</h3>
-          <p>Prototype that simulates vehicle-to-infrastructure alerts on low-power hardware.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact" class="container section contact-section">
-      <h2>Contact</h2>
-      <p>Want collab, mentorship inquiries, or feedback? Hit me up.</p>
-
-      <form id="contactForm" class="contact-form" novalidate>
-        <label>
-          Name
-          <input name="name" id="name" required placeholder="Your name" />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" id="email" required placeholder="you@example.com" />
-        </label>
-        <label>
-          Message
-          <textarea name="message" id="message" rows="4" placeholder="Tell me about your idea" required></textarea>
-        </label>
-        <div class="form-actions">
-          <button type="submit" class="btn">Send</button>
-          <button type="button" id="resetBtn" class="btn-ghost">Reset</button>
-        </div>
-        <p class="form-note" id="formNote" aria-live="polite"></p>
-      </form>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>© <span id="footerYear"></span> Simon — AI for Road Safety</div>
-      <div class="socials">
-        <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </div>
-  </footer>
-
-  <div id="modal" class="modal" aria-hidden="true">
-    <div class="modal-content" role="dialog" aria-modal="true">
-      <button id="modalClose" class="modal-close" aria-label="Close">✕</button>
-      <div id="modalBody"></div>
-    </div>
+    <p class="footer">Made with 💡 by Simon</p>
   </div>
 
   <script src="script.js"></script>
